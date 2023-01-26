@@ -1,56 +1,272 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Corpvision - Corporate Category Website WordPress Theme</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
     <!-- FontAwesome 6.2.0 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body>
+<body id="myBody">
     <!-- HEADER -->
-    <header></header>
+    <header>
+        <div class="container">
+            <nav class="navCorpVision navbar navbar-expand-lg">
+                <a class="navbar-brand text-center" href="#">
+                    <p class="mb-0"><i class="fa fa-align-right"></i>Corp Vision</p>
+                    <p class="mb-0">Vision to your Future</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCorpVision" aria-controls="navbarCorpVision" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCorpVision">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto p-0">
+                        <li class="nav-item m-auto">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item m-auto">
+                            <a class="nav-link" href="#about_us">ABOUT</a>
+                        </li>
+                        <li class="nav-item m-auto">
+                            <a class="nav-link" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item dropdown m-auto">
+                            <a class="nav-link dropdown-toggle text-center" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                                <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                                <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                                <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item m-auto">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search -->
+                    <div class="header-search HeaderSearch">
+                        <div class="control me-3">
+                            <div class="btn-material">
+                                <i class="fa fa-search icon-material-search"></i>
+                            </div>
+                        </div>
+                        <!-- full screen form controls -->
+                        <!-- <i class='icon-close fa fa-close material-icons'></i>
+                        <form action="#" method="GET" class='search-input'>
+                            <input class='input-search' name="s" placeholder='Start Typing' type='text'>
+                        </form> -->
+                    </div>
+
+                    <!-- Dark theme, light theme -->
+                    <div class="theme">
+                        <button class="btn" id="switchButton" title="Click to switch theme">
+                            <i class="far fa-moon"></i>
+                            <i class="far fa-sun"></i>
+                        </button>
+                    </div>
+                    <i class="fa-sharp fa-solid fa-brightness"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <!-- CAROUSEL -->
-    <div class="corpCarousel"></div>
+    <section class="corpCarousel">
+        <!-- <h1>We will solve your issues our vision to your future</h1>
+        <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
+        <button>Learn more</button> -->
+    </section>
+
     <!-- ABOUT US -->
-    <div class="aboutUs"></div>
+    <section class="aboutUs py-5" id="about_us">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row align-items-center">
+                <div class="aboutUs__left col-sm-12 col-lg-6">
+                    <p class="title__small">ABOUT US</p>
+                    <h3 class="title__big">
+                        We make the best strategies for you, Enhancing your success
+                    </h3>
+                    <p class="title__text mt-md-4 mt-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.
+                    </p>
+                    <ul class="mb-0 ps-0 pt-lg-2 mt-4">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-check-circle"></i>
+                                UI/UX Design and Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-check-circle"></i>
+                                Branding Design and Identity
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-check-circle"></i>
+                                Mobile App Design and Development
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aboutUs__right col-sm-12 col-lg-6">
+                    <div class="row">
+                        <div class="img__left col-6">
+                            <img class="rounded img-fluid" src="./img/a.jpg" alt="..." />
+                        </div>
+                        <div class="img__right col-6 mt-4">
+                            <img class="rounded img-fluid mb-md-3 mb-2" src="./img/c1.jpg" alt="..." />
+                            <img class="rounded img-fluid mt-md-3" src="./img/c4.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CHALLENGES -->
-    <div class="challenges"></div>
+    <section class="challenges py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row align-items-center">
+                <div class="challenges__lef col-sm-12 col-lg-6 pe-lg-5">
+                    <p class="title__small">EVERY DAY BRINGS NEW CHALLENGES</p>
+                    <h3 class="title__big">
+                        Creative agency focused on vision, product and people
+                    </h3>
+                    <p class="title__text mt-md-4 mt-3">
+                        Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+                        nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+                        eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                        Suspendisse non init magnaa velit efficitur, dolor eget ex
+                        fermentum.
+                    </p>
+                    <a href="#about_us" class="style__btn btn btn-primary mt-lg-5 mt-4">Discover more</a>
+                </div>
+                <div class="challenges__right col-sm-12 col-lg-6 mt-lg-0 mt-md-5 mt-4 text-center">
+                    <div class="right__list">
+                        <div class="right__item">
+                            <img src="./img/icon1.png" alt="icon1" />
+                            <a href="#ur">Our Process</a>
+                        </div>
+                        <div class="right__item">
+                            <img src="./img/icon2.png" alt="icon2" />
+                            <a href="#ur">How We Help</a>
+                        </div>
+                        <div class="right__item">
+                            <img src="./img/icon3.png" alt="icon3" />
+                            <a href="#ur">UI/UX Design</a>
+                        </div>
+                        <div class="right__item">
+                            <img src="./img/icon4.png" alt="icon4" />
+                            <a href="#ur">Creative Ideas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SERVICES -->
-    <div class="services"></div>
+    <section class="services py-5" id="services">
+        <div class="container py-lg-5 py-md-3">
+            <h3 class="title__big text-center">
+                Always there for your care, our Services
+            </h3>
+            <div class="row mt-lg-5 mt-4 text-center justify-content-center">
+                <div class="services__item col-sm-12 col-md-6 col-lg-4">
+                    <a href="#url" class="d-block">
+                        <img class="img-fluid rounded-top" src="./img/s1.jpg" alt="s1" />
+                    </a>
+                    <div class="services__info">
+                        <a href="#url">Work Expertise</a>
+                        <p class="title__text">
+                            Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                            elit..
+                        </p>
+                    </div>
+                    <a href="#url" class="btn btn__info mt-3">Learn More</a>
+                </div>
+                <div class="services__item col-sm-12 col-md-6 col-lg-4 mt-md-0 mt-5">
+                    <a href="#url" class="d-block">
+                        <img class="img-fluid rounded-top" src="./img/s2.jpg" alt="s2" />
+                    </a>
+                    <div class="services__info">
+                        <a href="#url">Product Development</a>
+                        <p class="title__text">
+                            Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                            elit..
+                        </p>
+                    </div>
+                    <a href="#url" class="btn btn__info mt-3">Learn More</a>
+                </div>
+                <div class="services__item col-sm-12 col-md-6 col-lg-4 mt-lg-0 mt-5">
+                    <a href="#url" class="d-block">
+                        <img class="img-fluid rounded-top" src="./img/s3.jpg" alt="s3" />
+                    </a>
+                    <div class="services__info">
+                        <a href="#url">Software Development</a>
+                        <p class="title__text">
+                            Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                            elit..
+                        </p>
+                    </div>
+                    <a href="#url" class="btn btn__info mt-3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- GALLERY -->
-    <div class="gallery"></div>
+    <section class="gallery"></section>
     <!-- OUR SUCCESS -->
-    <div class="ourSuccess"></div>
+    <section class="ourSuccess"></section>
     <!-- FEEDBACK -->
-    <div class="feedback"></div>
+    <section class="feedback"></section>
     <!-- ARTICLES -->
-    <div class="articles"></div>
+    <section class="articles"></section>
     <!-- FOOTER -->
     <footer></footer>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
