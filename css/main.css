@@ -745,8 +745,9 @@ header.shrink #switchButton .gg-moon::after {
   color: black;
 }
 
-/* ========================================= */
-/* RESPONSIVE */
+/* =========================================
+                  RESPONSIVE 
+   ========================================= */
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1200px !important;
@@ -879,6 +880,8 @@ header.shrink #switchButton .gg-moon::after {
 }
 
 @media only screen and (max-width: 768px) {
+
+  /* HEADER SEARCH */
   .header-search .icon-close {
     right: -110px;
     z-index: 9;
